@@ -1,3 +1,11 @@
+/*Layout*/
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 /*
 HEADER
 ================================================ */
@@ -6,15 +14,34 @@ HEADER
 }
 .main-nav li {
     text-align: center;
-    font-size: .75rem;
+    font-size: 1.2rem;
+    margin-left: 40px;
 }
 .logo{
     width: 200px;
     height: 50px;
 }
-header{
+header .wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 7%;
-    
+    padding: 1rem 1rem;
+    align-items: center;
+}
+
+/*
+HOME
+================================================ */
+.home-hero{
+    background: url('../images/bg-hero.jpg') no-repeat right top / 70vw auto;
+    padding: 5.5rem 1rem 3rem;
+}
+
+/*
+DESKTOP SIZE
+================================================ */
+@media (min-width: 600px) {
+/*Home*/
+    .home-hero h2{
+        font-size: 2.5rem;
+    }
 }
