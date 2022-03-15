@@ -1,6 +1,9 @@
 /*
 HEADER
 ================================================ */
+.main-nav{
+    display: flex;
+}
 .logo{
     width: 8rem;
 }
