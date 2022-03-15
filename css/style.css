@@ -12,3 +12,9 @@ HEADER
     width: 200px;
     height: 50px;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 7%;
+    
+}
