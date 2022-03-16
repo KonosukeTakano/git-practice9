@@ -36,12 +36,27 @@ HOME
     padding: 5.5rem 1rem 3rem;
 }
 
+/*Contents*/
+.home-text{
+    margin: 0 auto;
+}
+
 /*
 DESKTOP SIZE
 ================================================ */
 @media (min-width: 600px) {
+/* Common */
+    .title{
+        font-size: 1.9rem;
+    }
+
 /*Home*/
     .home-hero h2{
         font-size: 2.5rem;
     }
+}
+
+/* Contents */
+.home-text{
+    width: 50vw;
 }
