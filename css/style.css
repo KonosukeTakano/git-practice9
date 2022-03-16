@@ -6,6 +6,19 @@
     padding: 0 1rem;
 }
 
+/* Button */
+.btn{
+    display: inline-block;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.4rem;
+    width: 100%;
+    
+}
+.btn-secondary {
+    color: #555;
+    background: #d0bea2;
+    
+}
 /*
 HEADER
 ================================================ */
@@ -37,10 +50,26 @@ HOME
 }
 
 /*Contents*/
+.content{
+    padding: 2rem 1rem;
+}
 .home-text{
     margin: 0 auto;
 }
 
+/*FOOTER
+================================================*/
+footer{
+    background: #2D3374;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+footer .btn {
+    margin-bottom: 3.5rem;
+}
+.footer-nav a {
+    color: #d5d7e4;
+}
 /*
 DESKTOP SIZE
 ================================================ */
@@ -49,7 +78,9 @@ DESKTOP SIZE
     .title{
         font-size: 1.9rem;
     }
-
+    .btn{
+        width: auto;
+    }
 /*Home*/
     .home-hero h2{
         font-size: 2.5rem;
@@ -64,3 +95,12 @@ DESKTOP SIZE
     width: 50vw;
     margin-top: 3%;
 }
+
+/*Footer*/
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav li{
+        margin: 0.75rem;
+    }
