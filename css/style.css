@@ -46,6 +46,7 @@ HOME
 ================================================ */
 .home-hero{
     background: url('../images/bg-hero.jpg') no-repeat right top / 70vw auto;
+    background-size: contain;
     padding: 5.5rem 1rem 3rem;
 }
 
