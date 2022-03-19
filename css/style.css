@@ -59,6 +59,9 @@ HOME
 .home-text{
     margin: 0 auto;
 }
+.home-chart p {
+    text-align: center;
+}
 
 /*グラフの文字*/
 .ct-label{
@@ -78,6 +81,14 @@ HOME
 }
 .ct-series-d .ct-slice-pie{
     fill: #bbb;
+}
+
+/*棒グラフ*/
+.ct-series-a .ct-bar{
+    stroke: #3a7edf;
+}
+.ct-bar{
+    stroke-width: 15%;
 }
 
 /*FOOTER
@@ -119,7 +130,12 @@ DESKTOP SIZE
 
 /* Contents */
 .content{
-    padding: 16vw 1rem;
+    padding: 10vw 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-reverse{
+    flex-direction: row-reverse;
 }
 .home-text{
     width: 50vw;
