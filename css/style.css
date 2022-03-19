@@ -36,9 +36,9 @@ HEADER
 }
 header .wrapper{
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 1rem;
+    justify-content: space-between;   
     align-items: center;
+    padding: 1rem;
 }
 
 /*
@@ -53,8 +53,11 @@ HOME
 }
 
 /*Contents*/
+.brown-bg{
+    background: #f8f6f2;
+}
 .content{
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
 }
 .home-text{
     margin: 0 auto;
@@ -130,9 +133,10 @@ DESKTOP SIZE
 
 /* Contents */
 .content{
-    padding: 10vw 1rem;
+    padding: 4rem 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .flex-reverse{
     flex-direction: row-reverse;
