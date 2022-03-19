@@ -5,6 +5,10 @@
     margin: 0 auto;
     padding: 0 1rem;
 }
+main{
+    max-width: 900px;
+    margin: 6.25rem auto;
+}
 
 /* Button */
 .btn{
@@ -19,6 +23,32 @@
     background: #d0bea2;
     
 }
+
+/* Heading */
+.title{
+    font-size: 1.5rem;
+}
+.title-center{
+    text-align: center;
+}
+.title-center::after{
+    margin: 2.5rem auto;
+}
+/* Table */
+table{
+    margin: 3.5rem 0;
+}
+th,
+td{
+   display: block; 
+}
+th{
+    padding: 1rem;
+}
+td{
+    padding: .75rem 1rem 1.75rem;
+}
+
 /*
 HEADER
 ================================================ */
@@ -118,6 +148,14 @@ DESKTOP SIZE
     .btn{
         width: auto;
     }
+
+/* Table */
+th,
+td{
+    
+    display: table-cell;
+}
+
 /*Home*/
     .home-hero{
         padding: 16vw 1rem;
