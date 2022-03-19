@@ -9,14 +9,24 @@ main{
     max-width: 900px;
     margin: 6.25rem auto;
 }
+.text-center{
+    text-align: center;
+}
 
 /* Button */
 .btn{
     display: inline-block;
     padding: 1.25rem 3.25rem;
     font-size: 1.4rem;
+    text-align: center;
     width: 100%;
-    
+}
+.btn-primary {
+    color: #fff;
+    background: #2d3374;
+}
+.btn-primary:hover {
+    background: #3a7edf;
 }
 .btn-secondary {
     color: #555;
@@ -30,6 +40,12 @@ main{
 }
 .title-center{
     text-align: center;
+}
+.title::after{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 10rem;
 }
 .title-center::after{
     margin: 2.5rem auto;
@@ -124,6 +140,20 @@ HOME
     stroke-width: 15%;
 }
 
+/*
+JOB.html
+================================================ */
+.page-job .btn{
+    margin-bottom: 4rem;
+}
+
+/*Timeline*/
+.timeline-title{
+    font-size: 1.375rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
 /*FOOTER
 ================================================*/
 footer{
@@ -142,6 +172,9 @@ DESKTOP SIZE
 ================================================ */
 @media (min-width: 600px) {
 /* Common */
+    main{
+        padding: 5rem;
+    }
     .title{
         font-size: 1.9rem;
     }
@@ -150,10 +183,21 @@ DESKTOP SIZE
     }
 
 /* Table */
+tr:nth-child(odd){
+    background: #f8f6f2;
+}
+tr:nth-child(even) th {
+    background: #fff;
+}
+
 th,
 td{
-    
+    padding: 1.25rem;
     display: table-cell;
+}
+th{
+    vertical-align: middle;
+    width: 24%;
 }
 
 /*Home*/
@@ -165,7 +209,6 @@ td{
     }
 }
     p{
-        margin-top:3%;
         font-size: 20px;
     }
 
@@ -183,6 +226,21 @@ td{
     width: 50vw;
     margin-top: 3%;
     padding: 5vw 1rem;
+}
+
+/* Timeline */
+.timeline-item{
+    display: flex;
+    margin-bottom: 0;
+}
+.timeline-title{
+    width: 24%;
+    padding: 2rem 2.5rem 2rem 0;
+    text-align: right;
+}
+.timeline-content{
+    width: 76%;
+    padding: 1.5rem 0 1.5rem 2.5rem;
 }
 
 /*Footer*/
