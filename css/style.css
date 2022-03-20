@@ -175,6 +175,19 @@ JOB.html
     display: inline-block;
     margin-bottom: 1rem;
 }
+/*
+FORM.html
+================================================ */
+.page-form{
+    background-image: url('../images/bg-form.jpg'),linear-gradient(180deg, transparent 0%,transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: right 106px,0 0;
+    background-size: 70vw auto,contain;
+    background-repeat: no-repeat;
+}
+
+.text-small{
+    font-size: .9rem;
+}
 
 /*FOOTER
 ================================================*/
