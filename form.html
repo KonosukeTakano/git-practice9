@@ -9,7 +9,11 @@
 
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
     </head>
 
     <body class="page-form">
@@ -39,46 +43,60 @@
             <table>
                 <tr>
                     <th>お名前</th>
-                    <td></td>
+                    <td><input type="text" placeholder="例:大本真奈美"></td>
                 </tr>
                 <tr>
                     <th>フリガナ</th>
-                    <td>
+                    <td><input type="text" placeholder="例：オオモトマナミ">
                     </td>
                 </tr>
                 <tr>
                     <th>メールアドレス</th>
-                    <td></td>
+                    <td><input type="email" placeholder="例：hello@example.com"></td>
                 </tr>
                 <tr>
                     <th>ポートフォリオ</th>
-                    <td></td>
+                    <td><input type="url" placeholder="例：http://example.com"></td>
                 </tr>
                 <tr>
                     <th>希望勤務地</th>
                     <td>
-                        
+                        <label>
+                            <input type="checkbox">
+                            <span>東京</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>大阪</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>リモート勤務</span>
+                        </label>                        
                     </td>
                 </tr>
                 <tr>
                     <th>現在の状態</th>
-                    <td></td>
+                    <td>
+                        <div class="select-box">
+                            <select name="current-position">
+                                <option value="会社に在籍中">会社に在籍中</option>
+                                <option value="フリーランス">フリーランス</option>
+                                <option value="学生">学生</option>
+                                <option value="休職中">休職中</option>
+                            </select>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th>自己PR</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>勤務地</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>応募方法</th>
-                    <td></td>
-                </tr>
+                    <td>
+                        <textarea placeholder="例：これまでの経歴、学んできたこと、今取り組んでいるプロジェクト等"></textarea>
+                    </td>
+                </tr> 
             </table>
             <p class="text-center">
-                <a href="form.html" class="btn btn-primary">応募フォーム</a>
+                <a href="form.html" class="btn btn-primary">送信する</a>
             </p>
 
             

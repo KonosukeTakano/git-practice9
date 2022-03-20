@@ -19,6 +19,7 @@ main{
 
 /* Button */
 .btn{
+    font-family: 'Sawarabi Mincho', sans-serif;
     display: inline-block;
     padding: 1.25rem 3.25rem;
     font-size: 1.4rem;
@@ -40,6 +41,7 @@ main{
 
 /* Heading */
 .title{
+    font-family: 'Sawarabi Mincho', sans-serif;
     font-size: 1.5rem;
 }
 .title-center{
@@ -189,6 +191,65 @@ FORM.html
     font-size: .9rem;
 }
 
+/*Form*/
+input[type='text'],
+input[type='email'],
+input[type='url'],
+select,
+textarea{
+    border: 1px solid #bbb;
+    background: #fff;
+    padding: .5rem;
+    width: 100%;
+}
+textarea{
+    height: 10rem;
+}
+
+.select-box{
+    position: relative;
+}
+.select-box::after{
+    display: inline-block;
+    position: absolute;
+    top: .625rem;
+    right: 1rem;
+    /*Font Awesome*/
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    content: '\f078';
+    color:#bbb;
+}
+
+/*デフォルトのチェックボックスを非表示*/
+input[type='checkbox']{
+    opacity:0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+/*チェックボックス用の四角形を作る*/
+input[type='checkbox'] + span::before{
+    display: inline-block;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #bbb;
+    background: #fff;
+    margin: -.125rem .5rem 0 0;
+    vertical-align: middle;  
+
+    /* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    padding: 0 2px;
+    line-height: 1.5;
+}
+/* チェックが入るとチェックアイコンを表示 */
+input[type='checkbox']:checked + span::before {
+    content: '\f00c';
+}
+
 /*FOOTER
 ================================================*/
 footer{
@@ -234,6 +295,21 @@ DESKTOP SIZE
         vertical-align: middle;
         width: 24%;
     }
+/*Header*/
+header .wrapper{
+    padding: 2rem 1rem;
+}
+.logo{
+    width: 12.5rem;
+}
+.main-nav li{
+    margin-left: 2rem;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.25rem;
+}
+.main-nav a {
+    width: auto;
+}
 
 /*Home*/
     .home-hero{
