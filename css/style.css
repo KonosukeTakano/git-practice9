@@ -8,6 +8,7 @@
 main{
     max-width: 900px;
     margin: 6.25rem auto;
+    background: #fff;
 }
 .text-center{
     text-align: center;
@@ -143,6 +144,12 @@ HOME
 /*
 JOB.html
 ================================================ */
+.page-job{
+    background-image: url('../images/bg-job.jpg'),linear-gradient(180deg,transparent 0%,transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: left 106px,0 0;
+    background-size: 70vw auto,contain;
+    background-repeat: no-repeat;
+}
 .page-job .btn{
     margin-bottom: 4rem;
 }
