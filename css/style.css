@@ -7,8 +7,11 @@
 }
 main{
     max-width: 900px;
+    width: 94%;
     margin: 6.25rem auto;
+    padding: 3rem 2rem;
     background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 .text-center{
     text-align: center;
@@ -54,12 +57,15 @@ main{
 /* Table */
 table{
     margin: 3.5rem 0;
+    width: 100%;
 }
 th,
 td{
    display: block; 
 }
 th{
+    background: #f8f6f2;
+    vertical-align: middle;
     padding: 1rem;
 }
 td{
@@ -69,23 +75,26 @@ td{
 /*
 HEADER
 ================================================ */
-.main-nav{
-    display: flex;
-}
-.main-nav li {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-left: 40px;
-}
-.logo{
-    width: 200px;
-    height: 50px;
-}
 header .wrapper{
     display: flex;
     justify-content: space-between;   
     align-items: center;
     padding: 1rem;
+}
+.main-nav{
+    display: flex;
+}
+.main-nav li {
+    text-align: center;
+    font-size: .75rem;
+}
+.logo{
+    width: 7.5rem;
+}
+.main-nav a {
+    display: block;
+    padding: .5rem;
+    width: 4rem;
 }
 
 /*
@@ -158,6 +167,9 @@ JOB.html
 .timeline{
     list-style: decimal inside;
 }
+.timeline-item {
+    margin-bottom: 2rem;
+}
 .timeline-title{
     font-size: 1.375rem;
     display: inline-block;
@@ -193,22 +205,22 @@ DESKTOP SIZE
     }
 
 /* Table */
-tr:nth-child(odd){
-    background: #f8f6f2;
-}
-tr:nth-child(even) th {
-    background: #fff;
-}
+    tr:nth-child(odd){
+        background: #f8f6f2;
+    }
+    tr:nth-child(even) th {
+        background: #fff;
+    }
 
-th,
-td{
-    padding: 1.25rem;
-    display: table-cell;
-}
-th{
-    vertical-align: middle;
-    width: 24%;
-}
+    th,
+    td{
+        padding: 1.25rem;
+        display: table-cell;
+    }
+    th{
+        vertical-align: middle;
+        width: 24%;
+    }
 
 /*Home*/
     .home-hero{
@@ -217,7 +229,6 @@ th{
     .home-hero h2{
         font-size: 2.5rem;
     }
-}
     p{
         font-size: 20px;
     }
@@ -252,6 +263,7 @@ th{
     border-left: 5px solid #f8f6f2;
     width: 76%;
     padding: 1.5rem 0 1.5rem 2.5rem;
+    position: relative;
 }
 
 /*Footer*/
@@ -262,3 +274,4 @@ th{
     .footer-nav li{
         margin: 0.75rem;
     }
+}
