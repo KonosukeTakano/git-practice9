@@ -242,6 +242,7 @@ th{
     text-align: right;
 }
 .timeline-content{
+    border-left: 5px solid #f8f6f2;
     width: 76%;
     padding: 1.5rem 0 1.5rem 2.5rem;
 }
